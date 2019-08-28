@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -54,7 +54,6 @@
 				16A0B516EDCB10AEA1C146BC /* Pods-EventBriteSample.debug.xcconfig */,
 				E4AC13992DB2FB0F646E6B7C /* Pods-EventBriteSample.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -79,14 +78,78 @@
 		EEC40367231645E600B4FB65 /* EventBriteSample */ = {
 			isa = PBXGroup;
 			children = (
-				EEC40368231645E600B4FB65 /* AppDelegate.swift */,
-				EEC4036A231645E600B4FB65 /* ViewController.swift */,
-				EEC4036C231645E600B4FB65 /* Main.storyboard */,
-				EEC4036F231645E700B4FB65 /* Assets.xcassets */,
-				EEC40371231645E700B4FB65 /* LaunchScreen.storyboard */,
-				EEC40374231645E700B4FB65 /* Info.plist */,
+				EEC403812316489400B4FB65 /* Models */,
+				EEC4037E2316485B00B4FB65 /* Utility */,
+				EEC4037D2316481F00B4FB65 /* BaseFiles */,
+				EEC4037C2316480E00B4FB65 /* Cotroller */,
+				EEC4037A231647EA00B4FB65 /* Storyboards */,
+				EEC4037B231647FE00B4FB65 /* Resource */,
 			);
 			path = EventBriteSample;
+			sourceTree = "<group>";
+		};
+		EEC4037A231647EA00B4FB65 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				EEC4036C231645E600B4FB65 /* Main.storyboard */,
+				EEC40371231645E700B4FB65 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		EEC4037B231647FE00B4FB65 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				EEC4036F231645E700B4FB65 /* Assets.xcassets */,
+				EEC40374231645E700B4FB65 /* Info.plist */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		EEC4037C2316480E00B4FB65 /* Cotroller */ = {
+			isa = PBXGroup;
+			children = (
+				EEC4036A231645E600B4FB65 /* ViewController.swift */,
+			);
+			path = Cotroller;
+			sourceTree = "<group>";
+		};
+		EEC4037D2316481F00B4FB65 /* BaseFiles */ = {
+			isa = PBXGroup;
+			children = (
+				EEC40368231645E600B4FB65 /* AppDelegate.swift */,
+			);
+			path = BaseFiles;
+			sourceTree = "<group>";
+		};
+		EEC4037E2316485B00B4FB65 /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				EEC403802316487200B4FB65 /* Extension */,
+				EEC4037F2316486500B4FB65 /* NetworkManager */,
+			);
+			path = Utility;
+			sourceTree = "<group>";
+		};
+		EEC4037F2316486500B4FB65 /* NetworkManager */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = NetworkManager;
+			sourceTree = "<group>";
+		};
+		EEC403802316487200B4FB65 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		EEC403812316489400B4FB65 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
