@@ -13,6 +13,12 @@
 		EEC4036E231645E600B4FB65 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EEC4036C231645E600B4FB65 /* Main.storyboard */; };
 		EEC40370231645E700B4FB65 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EEC4036F231645E700B4FB65 /* Assets.xcassets */; };
 		EEC40373231645E700B4FB65 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EEC40371231645E700B4FB65 /* LaunchScreen.storyboard */; };
+		EEC4038323164CF700B4FB65 /* BriteEvents.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEC4038223164CF700B4FB65 /* BriteEvents.swift */; };
+		EEC40385231650F100B4FB65 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEC40384231650F100B4FB65 /* Constants.swift */; };
+		EEC40387231652B900B4FB65 /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEC40386231652B900B4FB65 /* APIManager.swift */; };
+		EEC40389231654A700B4FB65 /* Reachibility.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEC40388231654A700B4FB65 /* Reachibility.swift */; };
+		EEC4038B231657E800B4FB65 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EEC4038A231657E800B4FB65 /* Default-568h@2x.png */; };
+		EEC4038E23165CDC00B4FB65 /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEC4038D23165CDC00B4FB65 /* APIService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +32,12 @@
 		EEC4036F231645E700B4FB65 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EEC40372231645E700B4FB65 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EEC40374231645E700B4FB65 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EEC4038223164CF700B4FB65 /* BriteEvents.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BriteEvents.swift; sourceTree = "<group>"; };
+		EEC40384231650F100B4FB65 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		EEC40386231652B900B4FB65 /* APIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
+		EEC40388231654A700B4FB65 /* Reachibility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reachibility.swift; sourceTree = "<group>"; };
+		EEC4038A231657E800B4FB65 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		EEC4038D23165CDC00B4FB65 /* APIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +72,7 @@
 		EEC4035C231645E600B4FB65 = {
 			isa = PBXGroup;
 			children = (
+				EEC4038A231657E800B4FB65 /* Default-568h@2x.png */,
 				EEC40367231645E600B4FB65 /* EventBriteSample */,
 				EEC40366231645E600B4FB65 /* Products */,
 				E8C2E94B690C582D8D6DA80B /* Pods */,
@@ -78,6 +91,7 @@
 		EEC40367231645E600B4FB65 /* EventBriteSample */ = {
 			isa = PBXGroup;
 			children = (
+				EEC4038C23165CC500B4FB65 /* Services */,
 				EEC403812316489400B4FB65 /* Models */,
 				EEC4037E2316485B00B4FB65 /* Utility */,
 				EEC4037D2316481F00B4FB65 /* BaseFiles */,
@@ -127,6 +141,7 @@
 			children = (
 				EEC403802316487200B4FB65 /* Extension */,
 				EEC4037F2316486500B4FB65 /* NetworkManager */,
+				EEC40384231650F100B4FB65 /* Constants.swift */,
 			);
 			path = Utility;
 			sourceTree = "<group>";
@@ -134,6 +149,8 @@
 		EEC4037F2316486500B4FB65 /* NetworkManager */ = {
 			isa = PBXGroup;
 			children = (
+				EEC40386231652B900B4FB65 /* APIManager.swift */,
+				EEC40388231654A700B4FB65 /* Reachibility.swift */,
 			);
 			path = NetworkManager;
 			sourceTree = "<group>";
@@ -148,8 +165,17 @@
 		EEC403812316489400B4FB65 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				EEC4038223164CF700B4FB65 /* BriteEvents.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		EEC4038C23165CC500B4FB65 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				EEC4038D23165CDC00B4FB65 /* APIService.swift */,
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -213,6 +239,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EEC40373231645E700B4FB65 /* LaunchScreen.storyboard in Resources */,
+				EEC4038B231657E800B4FB65 /* Default-568h@2x.png in Resources */,
 				EEC40370231645E700B4FB65 /* Assets.xcassets in Resources */,
 				EEC4036E231645E600B4FB65 /* Main.storyboard in Resources */,
 			);
@@ -267,8 +294,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EEC4038323164CF700B4FB65 /* BriteEvents.swift in Sources */,
+				EEC4038E23165CDC00B4FB65 /* APIService.swift in Sources */,
 				EEC4036B231645E600B4FB65 /* ViewController.swift in Sources */,
+				EEC40389231654A700B4FB65 /* Reachibility.swift in Sources */,
+				EEC40387231652B900B4FB65 /* APIManager.swift in Sources */,
 				EEC40369231645E600B4FB65 /* AppDelegate.swift in Sources */,
+				EEC40385231650F100B4FB65 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -417,7 +449,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = "";
-				INFOPLIST_FILE = EventBriteSample/Info.plist;
+				INFOPLIST_FILE = EventBriteSample/Resource/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -437,7 +469,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = "";
-				INFOPLIST_FILE = EventBriteSample/Info.plist;
+				INFOPLIST_FILE = EventBriteSample/Resource/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
