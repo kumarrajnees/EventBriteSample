@@ -16,7 +16,7 @@ import Foundation
 struct BriteEvents: Codable {
     typealias GFCodable = BriteEvents
     let pagination: Pagination
-    let events: [Event]
+    let events: [Event]?
     let location: Location
 }
 

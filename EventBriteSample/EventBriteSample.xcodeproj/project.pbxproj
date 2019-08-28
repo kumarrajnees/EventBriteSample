@@ -19,6 +19,10 @@
 		EEC40389231654A700B4FB65 /* Reachibility.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEC40388231654A700B4FB65 /* Reachibility.swift */; };
 		EEC4038B231657E800B4FB65 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EEC4038A231657E800B4FB65 /* Default-568h@2x.png */; };
 		EEC4038E23165CDC00B4FB65 /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEC4038D23165CDC00B4FB65 /* APIService.swift */; };
+		EEC403922316890C00B4FB65 /* EventTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEC403902316890C00B4FB65 /* EventTableViewCell.swift */; };
+		EEC403932316890C00B4FB65 /* EventTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EEC403912316890C00B4FB65 /* EventTableViewCell.xib */; };
+		EEC4039523168B9700B4FB65 /* ClassName.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEC4039423168B9700B4FB65 /* ClassName.swift */; };
+		EEC4039823168BEE00B4FB65 /* ControllerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEC4039723168BEE00B4FB65 /* ControllerProtocol.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +42,10 @@
 		EEC40388231654A700B4FB65 /* Reachibility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reachibility.swift; sourceTree = "<group>"; };
 		EEC4038A231657E800B4FB65 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		EEC4038D23165CDC00B4FB65 /* APIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
+		EEC403902316890C00B4FB65 /* EventTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventTableViewCell.swift; sourceTree = "<group>"; };
+		EEC403912316890C00B4FB65 /* EventTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EventTableViewCell.xib; sourceTree = "<group>"; };
+		EEC4039423168B9700B4FB65 /* ClassName.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassName.swift; sourceTree = "<group>"; };
+		EEC4039723168BEE00B4FB65 /* ControllerProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControllerProtocol.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,6 +99,7 @@
 		EEC40367231645E600B4FB65 /* EventBriteSample */ = {
 			isa = PBXGroup;
 			children = (
+				EEC4038F231688EA00B4FB65 /* Cells */,
 				EEC4038C23165CC500B4FB65 /* Services */,
 				EEC403812316489400B4FB65 /* Models */,
 				EEC4037E2316485B00B4FB65 /* Utility */,
@@ -98,6 +107,7 @@
 				EEC4037C2316480E00B4FB65 /* Cotroller */,
 				EEC4037A231647EA00B4FB65 /* Storyboards */,
 				EEC4037B231647FE00B4FB65 /* Resource */,
+				EEC4039623168B9B00B4FB65 /* Protocol */,
 			);
 			path = EventBriteSample;
 			sourceTree = "<group>";
@@ -178,6 +188,24 @@
 			path = Services;
 			sourceTree = "<group>";
 		};
+		EEC4038F231688EA00B4FB65 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				EEC403902316890C00B4FB65 /* EventTableViewCell.swift */,
+				EEC403912316890C00B4FB65 /* EventTableViewCell.xib */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		EEC4039623168B9B00B4FB65 /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+				EEC4039423168B9700B4FB65 /* ClassName.swift */,
+				EEC4039723168BEE00B4FB65 /* ControllerProtocol.swift */,
+			);
+			path = Protocol;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -238,6 +266,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EEC403932316890C00B4FB65 /* EventTableViewCell.xib in Resources */,
 				EEC40373231645E700B4FB65 /* LaunchScreen.storyboard in Resources */,
 				EEC4038B231657E800B4FB65 /* Default-568h@2x.png in Resources */,
 				EEC40370231645E700B4FB65 /* Assets.xcassets in Resources */,
@@ -294,13 +323,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EEC403922316890C00B4FB65 /* EventTableViewCell.swift in Sources */,
 				EEC4038323164CF700B4FB65 /* BriteEvents.swift in Sources */,
 				EEC4038E23165CDC00B4FB65 /* APIService.swift in Sources */,
 				EEC4036B231645E600B4FB65 /* ViewController.swift in Sources */,
 				EEC40389231654A700B4FB65 /* Reachibility.swift in Sources */,
+				EEC4039823168BEE00B4FB65 /* ControllerProtocol.swift in Sources */,
 				EEC40387231652B900B4FB65 /* APIManager.swift in Sources */,
 				EEC40369231645E600B4FB65 /* AppDelegate.swift in Sources */,
 				EEC40385231650F100B4FB65 /* Constants.swift in Sources */,
+				EEC4039523168B9700B4FB65 /* ClassName.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

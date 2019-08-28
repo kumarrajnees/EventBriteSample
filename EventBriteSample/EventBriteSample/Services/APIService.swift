@@ -8,10 +8,11 @@
 
 import Foundation
 import Alamofire
+import SwiftyJSON
 
 class APIService {
     
-    class func getEvents(_ reqestData:[String:Any], completion : @escaping (_ isSuccess : Bool, _ error :HNError?,_ data:BriteEvents?) ->Void) {
+    class func getEvents(_ reqestData:[String:Any], completion : @escaping (_ isSuccess : Bool, _ error :HNError?,_ data:JSON?) ->Void) {
         
         let lat = reqestData["lat"] as! Double
         let log = reqestData["log"] as! Double
@@ -24,17 +25,23 @@ class APIService {
         let headers: [String: String] = ["Authorization": "Bearer \(auth_token)"]
         APIManager.request(urlString: eventURL, requestMethod: .get, headers: headers, params: nil, success: { (response) in
             print(response)
-            do {
-                //1. Convert JSONObject to Data
-                let data = try JSONSerialization.data(
-                withJSONObject: response,
-                options: JSONSerialization.WritingOptions.prettyPrinted)
-                //2. try to parse data to associated model
-                let model = try JSONDecoder().decode(BriteEvents.self, from: data)
-                completion(true,nil,model)
-            } catch {
-                completion(false,nil,nil)
-            }
+            
+            
+            let model = JSON.init(response)
+            completion(true,nil,model)
+
+            
+//            do {
+//                //1. Convert JSONObject to Data
+//                let data = try JSONSerialization.data(
+//                withJSONObject: response,
+//                options: JSONSerialization.WritingOptions.prettyPrinted)
+//                //2. try to parse data to associated model
+//                let model = try JSONDecoder().decode(BriteEvents.self, from: data)
+//                completion(true,nil,model)
+//            } catch {
+//                completion(false,nil,nil)
+//            }
             
         }) { (error) in
             print(error)
