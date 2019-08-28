@@ -11,23 +11,32 @@ import SwiftyJSON
 class ViewController: UIViewController {
     
     @IBOutlet weak var eventTableView: UITableView!
+    var lat:Double = 0.0
+    var log:Double = 0.0
+    var currentPage:Int = 1
+    var totalPage:Int = 1
     var evnBriteObj:JSON?
     var events:[JSON] = []
     override func viewDidLoad() {
         super.viewDidLoad()
         configureTableView()
         getEventsData()
+        CoreLocationManager.sharedeInstance.configureLocationManager()
         // Do any additional setup after loading the view, typically from a nib.
     }
 
     fileprivate func getEventsData() {
+        if lat == 0 {return}
+        let end_date = Utility.getEndEventDate() + "T00:00:01Z"
+        let strat_date = Utility.changeDateInFormat(Date(), formatString: dateFormat) + "T00:00:01Z"
+        events.removeAll()
         var reqestData:[String:Any] = [:]
-        reqestData["lat"] =  49.279974
-        reqestData["log"] = -123.11236500000001
-        reqestData["start_date"] = "2019-08-27T00:00:01Z"
-        reqestData["end_date"] = "2019-09-1T00:00:01Z"
-        reqestData["radius"] = 2
-        reqestData["page"] = 1
+        reqestData["lat"] =  lat
+        reqestData["log"] =  log
+        reqestData["start_date"] = strat_date
+        reqestData["end_date"] = end_date
+        reqestData["radius"] = 2 //2mi
+        reqestData["page"] = currentPage
         
         APIService.getEvents(reqestData) { (successs, erro,model) in
             if successs {
@@ -50,6 +59,12 @@ extension ViewController: UITableViewDataSource, UITableViewDelegate {
         eventTableView.rowHeight =  UITableView.automaticDimension
         let mediaMsgNib = UINib(nibName :EventTableViewCell.className, bundle : nil)
         eventTableView.register(mediaMsgNib, forCellReuseIdentifier: EventTableViewCell.identifire)
+        
+        CoreLocationManager.sharedeInstance.gpsValueUpdates = { [weak self](lat,log) in
+            self?.lat = lat
+            self?.log = log
+            self?.getEventsData()
+        }
     }
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {

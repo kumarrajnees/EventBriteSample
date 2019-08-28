@@ -9,13 +9,13 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "EventBriteSample/Cotroller/ViewController.swift"
-            timestampString = "588683136.953622"
+            filePath = "EventBriteSample/Utility/NetworkManager/LocationManager.swift"
+            timestampString = "588699787.324429"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "37"
-            endingLineNumber = "37"
-            landmarkName = "getEventsData()"
+            startingLineNumber = "50"
+            endingLineNumber = "50"
+            landmarkName = "locationManager(_:didUpdateLocations:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -25,13 +25,13 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "EventBriteSample/Utility/NetworkManager/APIManager.swift"
-            timestampString = "588683136.953786"
+            filePath = "EventBriteSample/Utility/NetworkManager/LocationManager.swift"
+            timestampString = "588699787.324633"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "29"
-            endingLineNumber = "29"
-            landmarkName = "request(urlString:requestMethod:encoding:headers:params:success:failure:)"
+            startingLineNumber = "25"
+            endingLineNumber = "25"
+            landmarkName = "configureLocationManager()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -41,13 +41,13 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "EventBriteSample/Cotroller/ViewController.swift"
-            timestampString = "588683136.953877"
+            filePath = "EventBriteSample/Utility/NetworkManager/LocationManager.swift"
+            timestampString = "588699787.324827"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "58"
-            endingLineNumber = "58"
-            landmarkName = "tableView(_:cellForRowAt:)"
+            startingLineNumber = "62"
+            endingLineNumber = "62"
+            landmarkName = "locationManager(_:didChangeAuthorization:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

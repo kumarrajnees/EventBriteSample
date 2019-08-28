@@ -42,7 +42,6 @@ class APIManager {
     
     
     func stopAllPrevioudRequest() {
-        
         for req in self.reqestList {
             (req as! DataRequest).suspend()
         }

@@ -23,6 +23,8 @@
 		EEC403932316890C00B4FB65 /* EventTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EEC403912316890C00B4FB65 /* EventTableViewCell.xib */; };
 		EEC4039523168B9700B4FB65 /* ClassName.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEC4039423168B9700B4FB65 /* ClassName.swift */; };
 		EEC4039823168BEE00B4FB65 /* ControllerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEC4039723168BEE00B4FB65 /* ControllerProtocol.swift */; };
+		EEC403C22316A34200B4FB65 /* EventBriteViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEC403C12316A34200B4FB65 /* EventBriteViewModel.swift */; };
+		EEC403C42316A56C00B4FB65 /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEC403C32316A56C00B4FB65 /* LocationManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -46,6 +48,8 @@
 		EEC403912316890C00B4FB65 /* EventTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EventTableViewCell.xib; sourceTree = "<group>"; };
 		EEC4039423168B9700B4FB65 /* ClassName.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassName.swift; sourceTree = "<group>"; };
 		EEC4039723168BEE00B4FB65 /* ControllerProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControllerProtocol.swift; sourceTree = "<group>"; };
+		EEC403C12316A34200B4FB65 /* EventBriteViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventBriteViewModel.swift; sourceTree = "<group>"; };
+		EEC403C32316A56C00B4FB65 /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +103,7 @@
 		EEC40367231645E600B4FB65 /* EventBriteSample */ = {
 			isa = PBXGroup;
 			children = (
+				EEC403C02316A31000B4FB65 /* ViewModel */,
 				EEC4038F231688EA00B4FB65 /* Cells */,
 				EEC4038C23165CC500B4FB65 /* Services */,
 				EEC403812316489400B4FB65 /* Models */,
@@ -161,6 +166,7 @@
 			children = (
 				EEC40386231652B900B4FB65 /* APIManager.swift */,
 				EEC40388231654A700B4FB65 /* Reachibility.swift */,
+				EEC403C32316A56C00B4FB65 /* LocationManager.swift */,
 			);
 			path = NetworkManager;
 			sourceTree = "<group>";
@@ -204,6 +210,14 @@
 				EEC4039723168BEE00B4FB65 /* ControllerProtocol.swift */,
 			);
 			path = Protocol;
+			sourceTree = "<group>";
+		};
+		EEC403C02316A31000B4FB65 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				EEC403C12316A34200B4FB65 /* EventBriteViewModel.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -331,6 +345,8 @@
 				EEC4039823168BEE00B4FB65 /* ControllerProtocol.swift in Sources */,
 				EEC40387231652B900B4FB65 /* APIManager.swift in Sources */,
 				EEC40369231645E600B4FB65 /* AppDelegate.swift in Sources */,
+				EEC403C42316A56C00B4FB65 /* LocationManager.swift in Sources */,
+				EEC403C22316A34200B4FB65 /* EventBriteViewModel.swift in Sources */,
 				EEC40385231650F100B4FB65 /* Constants.swift in Sources */,
 				EEC4039523168B9700B4FB65 /* ClassName.swift in Sources */,
 			);
