@@ -9,4 +9,5 @@ target 'EventBriteSample' do
 pod 'SwiftyJSON'
 pod 'SDWebImage'
 pod 'Alamofire'
+pod 'AppCenter'
 end

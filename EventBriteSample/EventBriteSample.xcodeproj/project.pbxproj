@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		64C05D62ABA4DD007EE9E40E /* Pods_EventBriteSample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D008014D7F63A89254D43E9 /* Pods_EventBriteSample.framework */; };
+		EE3D8DD42393C2F7002E692E /* EventBriteSampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE3D8DD32393C2F7002E692E /* EventBriteSampleTests.swift */; };
 		EEC40369231645E600B4FB65 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEC40368231645E600B4FB65 /* AppDelegate.swift */; };
 		EEC4036B231645E600B4FB65 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEC4036A231645E600B4FB65 /* ViewController.swift */; };
 		EEC4036E231645E600B4FB65 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EEC4036C231645E600B4FB65 /* Main.storyboard */; };
@@ -27,10 +28,23 @@
 		EEC403C42316A56C00B4FB65 /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEC403C32316A56C00B4FB65 /* LocationManager.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		EE3D8DD62393C2F7002E692E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EEC4035D231645E600B4FB65 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EEC40364231645E600B4FB65;
+			remoteInfo = EventBriteSample;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
 		16A0B516EDCB10AEA1C146BC /* Pods-EventBriteSample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EventBriteSample.debug.xcconfig"; path = "Target Support Files/Pods-EventBriteSample/Pods-EventBriteSample.debug.xcconfig"; sourceTree = "<group>"; };
 		5D008014D7F63A89254D43E9 /* Pods_EventBriteSample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EventBriteSample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E4AC13992DB2FB0F646E6B7C /* Pods-EventBriteSample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EventBriteSample.release.xcconfig"; path = "Target Support Files/Pods-EventBriteSample/Pods-EventBriteSample.release.xcconfig"; sourceTree = "<group>"; };
+		EE3D8DD12393C2F6002E692E /* EventBriteSampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EventBriteSampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EE3D8DD32393C2F7002E692E /* EventBriteSampleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventBriteSampleTests.swift; sourceTree = "<group>"; };
+		EE3D8DD52393C2F7002E692E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EEC40365231645E600B4FB65 /* EventBriteSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EventBriteSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EEC40368231645E600B4FB65 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EEC4036A231645E600B4FB65 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -53,6 +67,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		EE3D8DCE2393C2F6002E692E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		EEC40362231645E600B4FB65 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -81,11 +102,21 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		EE3D8DD22393C2F7002E692E /* EventBriteSampleTests */ = {
+			isa = PBXGroup;
+			children = (
+				EE3D8DD32393C2F7002E692E /* EventBriteSampleTests.swift */,
+				EE3D8DD52393C2F7002E692E /* Info.plist */,
+			);
+			path = EventBriteSampleTests;
+			sourceTree = "<group>";
+		};
 		EEC4035C231645E600B4FB65 = {
 			isa = PBXGroup;
 			children = (
 				EEC4038A231657E800B4FB65 /* Default-568h@2x.png */,
 				EEC40367231645E600B4FB65 /* EventBriteSample */,
+				EE3D8DD22393C2F7002E692E /* EventBriteSampleTests */,
 				EEC40366231645E600B4FB65 /* Products */,
 				E8C2E94B690C582D8D6DA80B /* Pods */,
 				16319CB9AF8042E88D764169 /* Frameworks */,
@@ -96,6 +127,7 @@
 			isa = PBXGroup;
 			children = (
 				EEC40365231645E600B4FB65 /* EventBriteSample.app */,
+				EE3D8DD12393C2F6002E692E /* EventBriteSampleTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -223,6 +255,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		EE3D8DD02393C2F6002E692E /* EventBriteSampleTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EE3D8DDA2393C2F7002E692E /* Build configuration list for PBXNativeTarget "EventBriteSampleTests" */;
+			buildPhases = (
+				EE3D8DCD2393C2F6002E692E /* Sources */,
+				EE3D8DCE2393C2F6002E692E /* Frameworks */,
+				EE3D8DCF2393C2F6002E692E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EE3D8DD72393C2F7002E692E /* PBXTargetDependency */,
+			);
+			name = EventBriteSampleTests;
+			productName = EventBriteSampleTests;
+			productReference = EE3D8DD12393C2F6002E692E /* EventBriteSampleTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		EEC40364231645E600B4FB65 /* EventBriteSample */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = EEC40377231645E700B4FB65 /* Build configuration list for PBXNativeTarget "EventBriteSample" */;
@@ -252,6 +302,10 @@
 				LastUpgradeCheck = 1010;
 				ORGANIZATIONNAME = "Rajneesh Kumar";
 				TargetAttributes = {
+					EE3D8DD02393C2F6002E692E = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = EEC40364231645E600B4FB65;
+					};
 					EEC40364231645E600B4FB65 = {
 						CreatedOnToolsVersion = 10.1;
 					};
@@ -271,11 +325,19 @@
 			projectRoot = "";
 			targets = (
 				EEC40364231645E600B4FB65 /* EventBriteSample */,
+				EE3D8DD02393C2F6002E692E /* EventBriteSampleTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		EE3D8DCF2393C2F6002E692E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		EEC40363231645E600B4FB65 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -333,6 +395,14 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		EE3D8DCD2393C2F6002E692E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EE3D8DD42393C2F7002E692E /* EventBriteSampleTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		EEC40361231645E600B4FB65 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -354,6 +424,14 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		EE3D8DD72393C2F7002E692E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EEC40364231645E600B4FB65 /* EventBriteSample */;
+			targetProxy = EE3D8DD62393C2F7002E692E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin PBXVariantGroup section */
 		EEC4036C231645E600B4FB65 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
@@ -374,6 +452,44 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		EE3D8DD82393C2F7002E692E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = EventBriteSampleTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = home.EventBriteSampleTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/EventBriteSample.app/EventBriteSample";
+			};
+			name = Debug;
+		};
+		EE3D8DD92393C2F7002E692E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = EventBriteSampleTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = home.EventBriteSampleTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/EventBriteSample.app/EventBriteSample";
+			};
+			name = Release;
+		};
 		EEC40375231645E700B4FB65 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -533,6 +649,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		EE3D8DDA2393C2F7002E692E /* Build configuration list for PBXNativeTarget "EventBriteSampleTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EE3D8DD82393C2F7002E692E /* Debug */,
+				EE3D8DD92393C2F7002E692E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		EEC40360231645E600B4FB65 /* Build configuration list for PBXProject "EventBriteSample" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

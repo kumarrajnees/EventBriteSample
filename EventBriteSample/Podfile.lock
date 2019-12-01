@@ -1,5 +1,13 @@
 PODS:
   - Alamofire (4.8.2)
+  - AppCenter (2.5.1):
+    - AppCenter/Analytics (= 2.5.1)
+    - AppCenter/Crashes (= 2.5.1)
+  - AppCenter/Analytics (2.5.1):
+    - AppCenter/Core
+  - AppCenter/Core (2.5.1)
+  - AppCenter/Crashes (2.5.1):
+    - AppCenter/Core
   - SDWebImage (5.1.0):
     - SDWebImage/Core (= 5.1.0)
   - SDWebImage/Core (5.1.0)
@@ -7,20 +15,24 @@ PODS:
 
 DEPENDENCIES:
   - Alamofire
+  - AppCenter
   - SDWebImage
   - SwiftyJSON
 
 SPEC REPOS:
-  https://github.com/cocoapods/specs.git:
+  https://github.com/CocoaPods/Specs.git:
     - Alamofire
     - SDWebImage
     - SwiftyJSON
+  trunk:
+    - AppCenter
 
 SPEC CHECKSUMS:
   Alamofire: ae5c501addb7afdbb13687d7f2f722c78734c2d3
+  AppCenter: fddcbac6e4baae3d93a196ceb0bfe0e4ce407dec
   SDWebImage: fb387001955223213dde14bc08c8b73f371f8d8f
   SwiftyJSON: 36413e04c44ee145039d332b4f4e2d3e8d6c4db7
 
-PODFILE CHECKSUM: 7dedce808f480b111f58fda9c1418623ac6f27f8
+PODFILE CHECKSUM: 1fb1db8e8aeff7ff38ba319b198829eaa5902058
 
-COCOAPODS: 1.7.5
+COCOAPODS: 1.8.4
