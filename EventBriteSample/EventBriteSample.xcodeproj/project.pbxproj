@@ -8,7 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		64C05D62ABA4DD007EE9E40E /* Pods_EventBriteSample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D008014D7F63A89254D43E9 /* Pods_EventBriteSample.framework */; };
+		94B8EC7226712AFD895DEAC0 /* Pods_EventBriteSampleTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD1183182092716AB5631DC5 /* Pods_EventBriteSampleTests.framework */; };
 		EE3D8DD42393C2F7002E692E /* EventBriteSampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE3D8DD32393C2F7002E692E /* EventBriteSampleTests.swift */; };
+		EE3D8DDB2393CD0C002E692E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEC40368231645E600B4FB65 /* AppDelegate.swift */; };
 		EEC40369231645E600B4FB65 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEC40368231645E600B4FB65 /* AppDelegate.swift */; };
 		EEC4036B231645E600B4FB65 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEC4036A231645E600B4FB65 /* ViewController.swift */; };
 		EEC4036E231645E600B4FB65 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EEC4036C231645E600B4FB65 /* Main.storyboard */; };
@@ -40,6 +42,7 @@
 
 /* Begin PBXFileReference section */
 		16A0B516EDCB10AEA1C146BC /* Pods-EventBriteSample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EventBriteSample.debug.xcconfig"; path = "Target Support Files/Pods-EventBriteSample/Pods-EventBriteSample.debug.xcconfig"; sourceTree = "<group>"; };
+		41B74A76E443763A8D696C55 /* Pods-EventBriteSampleTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EventBriteSampleTests.debug.xcconfig"; path = "Target Support Files/Pods-EventBriteSampleTests/Pods-EventBriteSampleTests.debug.xcconfig"; sourceTree = "<group>"; };
 		5D008014D7F63A89254D43E9 /* Pods_EventBriteSample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EventBriteSample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E4AC13992DB2FB0F646E6B7C /* Pods-EventBriteSample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EventBriteSample.release.xcconfig"; path = "Target Support Files/Pods-EventBriteSample/Pods-EventBriteSample.release.xcconfig"; sourceTree = "<group>"; };
 		EE3D8DD12393C2F6002E692E /* EventBriteSampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EventBriteSampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -64,6 +67,8 @@
 		EEC4039723168BEE00B4FB65 /* ControllerProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControllerProtocol.swift; sourceTree = "<group>"; };
 		EEC403C12316A34200B4FB65 /* EventBriteViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventBriteViewModel.swift; sourceTree = "<group>"; };
 		EEC403C32316A56C00B4FB65 /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
+		F9AD70F6B4711A00F640F014 /* Pods-EventBriteSampleTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EventBriteSampleTests.release.xcconfig"; path = "Target Support Files/Pods-EventBriteSampleTests/Pods-EventBriteSampleTests.release.xcconfig"; sourceTree = "<group>"; };
+		FD1183182092716AB5631DC5 /* Pods_EventBriteSampleTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EventBriteSampleTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +76,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				94B8EC7226712AFD895DEAC0 /* Pods_EventBriteSampleTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -89,6 +95,7 @@
 			isa = PBXGroup;
 			children = (
 				5D008014D7F63A89254D43E9 /* Pods_EventBriteSample.framework */,
+				FD1183182092716AB5631DC5 /* Pods_EventBriteSampleTests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -98,6 +105,8 @@
 			children = (
 				16A0B516EDCB10AEA1C146BC /* Pods-EventBriteSample.debug.xcconfig */,
 				E4AC13992DB2FB0F646E6B7C /* Pods-EventBriteSample.release.xcconfig */,
+				41B74A76E443763A8D696C55 /* Pods-EventBriteSampleTests.debug.xcconfig */,
+				F9AD70F6B4711A00F640F014 /* Pods-EventBriteSampleTests.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -259,9 +268,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = EE3D8DDA2393C2F7002E692E /* Build configuration list for PBXNativeTarget "EventBriteSampleTests" */;
 			buildPhases = (
+				6974FBAFAD12EDE18FE5C806 /* [CP] Check Pods Manifest.lock */,
 				EE3D8DCD2393C2F6002E692E /* Sources */,
 				EE3D8DCE2393C2F6002E692E /* Frameworks */,
 				EE3D8DCF2393C2F6002E692E /* Resources */,
+				D26D79EDADFB5288F4323B1E /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -392,6 +403,45 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-EventBriteSample/Pods-EventBriteSample-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		6974FBAFAD12EDE18FE5C806 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-EventBriteSampleTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D26D79EDADFB5288F4323B1E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-EventBriteSampleTests/Pods-EventBriteSampleTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-EventBriteSampleTests/Pods-EventBriteSampleTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-EventBriteSampleTests/Pods-EventBriteSampleTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -399,6 +449,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EE3D8DDB2393CD0C002E692E /* AppDelegate.swift in Sources */,
 				EE3D8DD42393C2F7002E692E /* EventBriteSampleTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -454,6 +505,7 @@
 /* Begin XCBuildConfiguration section */
 		EE3D8DD82393C2F7002E692E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 41B74A76E443763A8D696C55 /* Pods-EventBriteSampleTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
@@ -473,6 +525,7 @@
 		};
 		EE3D8DD92393C2F7002E692E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F9AD70F6B4711A00F640F014 /* Pods-EventBriteSampleTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;

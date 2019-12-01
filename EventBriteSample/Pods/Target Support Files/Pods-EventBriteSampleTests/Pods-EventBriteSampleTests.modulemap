@@ -1,0 +1,6 @@
+framework module Pods_EventBriteSampleTests {
+  umbrella header "Pods-EventBriteSampleTests-umbrella.h"
+
+  export *
+  module * { export * }
+}
