@@ -25,13 +25,13 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "EventBriteSample/Utility/NetworkManager/LocationManager.swift"
-            timestampString = "588699787.324633"
+            filePath = "EventBriteSample/Cotroller/ViewController.swift"
+            timestampString = "596917682.96269"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "25"
-            endingLineNumber = "25"
-            landmarkName = "configureLocationManager()"
+            startingLineNumber = "22"
+            endingLineNumber = "22"
+            landmarkName = "viewDidLoad()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -41,13 +41,13 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "EventBriteSample/Utility/NetworkManager/LocationManager.swift"
-            timestampString = "588699787.324827"
+            filePath = "EventBriteSample/Services/APIService.swift"
+            timestampString = "596917861.222111"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "62"
-            endingLineNumber = "62"
-            landmarkName = "locationManager(_:didChangeAuthorization:)"
+            startingLineNumber = "29"
+            endingLineNumber = "29"
+            landmarkName = "getEvents(_:completion:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

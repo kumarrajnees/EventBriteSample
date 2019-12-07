@@ -21,3 +21,12 @@ target 'EventBriteSampleTests' do
   pod 'Alamofire'
   pod 'AppCenter'
 end
+target 'EventBriteSampleTests' do
+  # Comment the next line if you don't want to use dynamic frameworks
+  use_frameworks!
+  # Pods for EventBriteSample
+  pod 'SwiftyJSON'
+  pod 'SDWebImage'
+  pod 'Alamofire'
+  pod 'AppCenter'
+end
